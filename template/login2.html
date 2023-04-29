@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+
+      .login-form {
+        width: 300px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .login-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .login-form input[type="text"],
+      .login-form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      .login-form input[type="submit"] {
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .login-form input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+
+<!--  Image Edits-->
+
+
+<!--Image Edit Ends-->
+  <br><br>
+<!--  Welcome Admin-->
+  <header style="background-color: #333; color: #fff; padding: 10px; margin: 0 610px 0 624px ">
+      <h1 style="margin: 0;">Welcome Admin</h1>
+
+    </header>
+  <br><br><br><br>
+<!--  -->
+
+    <form style="width:500px;height:250px;" class="login-form" action="/form_login"  method="post">
+      <h2>Login Form</h2>
+      <input type="text" name="username" placeholder="Username" >
+      <br><br>
+      <input type="password" name="password" placeholder="Password" >
+      <br><br>
+      <input type="submit" value="Login">
+    </form>
+  <br><br><br><br><br><br>
+  <h1 style="margin-left:595px; "> {{info}}</h1>  <!--whether answer is right or not -->
+  </body>
+</html>

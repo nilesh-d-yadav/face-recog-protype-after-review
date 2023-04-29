@@ -1,0 +1,66 @@
+<!--This page Will Welcome The Admin After Log-IN and will have the options -->
+
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles_admin.css') }}">
+        <script src="{{ url_for('static', filename='styles_admin.js') }}"></script>
+        <title>Admin Homepage</title>
+    </head>
+
+  <body >
+
+                                    <!--  Welcome Tag-->
+
+    <h1 class="containers">Welcome Admin</h1>
+
+    <div class="container">
+
+      <a class="button"  target="_blank" href="/first_run"  style="--color:#1e9bff;">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Attendance Tracker
+      </a>
+
+      <a class="button" href="/mailed"  onclick="showCode()" style="--color: #ff1867;">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Attendance Report
+      </a>
+
+      <a class="button" href="/deep-face1" target="_blank" style="--color: #6eff3e;">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Evaluating Moods
+      </a>
+
+      <a class="button" href="/system_details" target="_blank" style="--color: #B9EDDD;">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        WHO AM I?
+      </a>
+
+
+
+      <a class="button" href="/summarizes"  onclick="summarizeCode()" target="_blank" style="--color: #E5BEEC;">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Summarize The Day
+      </a>
+
+      <br>
+</div>
+  </body>
+</html>

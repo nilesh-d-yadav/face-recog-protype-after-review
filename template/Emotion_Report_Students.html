@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emotion Report Of Students</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Emotion_Report_Students.css') }}">
+</head>
+<body>
+    <h1> Data Generated Through DeepFace Learning Model</h1>
+
+	<strong>Emotion Report for Students</strong>
+
+<ol class="alternating-colors">
+	{% for emotion in my_list %}
+  <li>
+    <strong>{{ emotion }}</strong>
+  </li>
+	{% endfor %}
+</ol>
+
+    <ul class="alternating-colors">
+        <li><strong>Most Common Emotion Is: {{most_common}} with a value: {{common_number}}</strong> </li>
+	</ul>
+
+
+
+
+</body>
+</html>
