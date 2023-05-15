@@ -33,7 +33,7 @@ def present_students():
 # pushbullet
 from twilio.rest import Client
 account_sid = 'AC3e70cc45a7ba4b693c00f8e74499c7bb'
-auth_token = '79464a8f3fce5468bc72cd5672ad13e1'
+auth_token = 'key-value to be inserted here'
 client = Client(account_sid, auth_token)
 
 
@@ -52,7 +52,7 @@ def main_run():
     import requests
     category = 'happiness'
     api_url = 'https://api.api-ninjas.com/v1/quotes?limit=1?category={}'.format(category)
-    response = requests.get(api_url, headers={'X-Api-Key': 'r/u78pAoAbyyIrJRGRfqTg==OWQvfa3X3nQ6Gplp'})
+    response = requests.get(api_url, headers={'X-Api-Key': 'key-value to be inserted here'})
 
     if response.status_code == requests.codes.ok:
         quote_data= response.json()
